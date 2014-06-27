@@ -7,6 +7,12 @@
 </head>
 <body>
 
+<% if flash[:shortened_id].present? %>
+  <p>
+    Your shortened url has been created:
+    <%= link_to 'here', url_url(flash[:shortened_id]) %>.
+  </p>
+<% end %>
 <%= yield %>
 
 </body>

@@ -1,0 +1,9 @@
+<h1>Skinny Pins</h1>
+
+<%= form_tag('/urls') do %>
+  <p>
+    <%= label_tag(:orig_url, "Paste a link to shorten it:") %>
+    <%= text_field_tag(:orig_url) %>
+  </p>
+  <%= submit_tag("Shorten!") %>
+<% end %>
